@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group to bapi create salesorder</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZLA02_GF_MRTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZLA02_GF_MR</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZLA02_CREATESO_MR</FUNCNAME>
+     <SHORT_TEXT>Function module to create sales order bapi</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DOC_TYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>AUART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SALES_ORG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VKORG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DISTR_CHAN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VTWEG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DIVISION</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SOLD_TO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>TEST_RUN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>SALES_DOC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBELN_VA</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DOC_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SALES_ORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Organization</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DISTR_CHAN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Distribution Channel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DIVISION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Division</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SOLD_TO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TEST_RUN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SALES_DOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
